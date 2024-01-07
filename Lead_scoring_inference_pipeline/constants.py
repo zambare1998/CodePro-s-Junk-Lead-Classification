@@ -1,17 +1,17 @@
-DB_PATH = "/home/airflow/dags/Lead_scoring_data_pipeline/data/"
+DB_PATH = "/home/Lead_Scoring_Case_Study/Lead_scoring_data_pipeline/"
 DB_FILE_NAME = "lead_scoring_data_cleaning_inference.db"
 
-DATA_DIRECTORY="data/leadscoring_inference.csv"
+DATA_DIRECTORY="data/leadscoring_inference_final_v2.csv"
 DB_FILE_MLFLOW = "Lead_scoring_mlflow_production.db"
 
-FILE_PATH= "/home/airflow/dags/Lead_scoring_inference_pipeline/"
+FILE_PATH= "/home/Lead_Scoring_Case_Study/Lead_scoring_inference_pipeline/"
 
 
 TRACKING_URI = "http://0.0.0.0:6007"
 
 # experiment, model name and stage to load the model from mlflow model registry
 
-MODEL_PATH ="/home/airflow/dags/Lead_scoring_training_pipelines" 
+MODEL_PATH ="/home/Lead_Scoring_Case_Study/Lead_scoring_training_pipeline" 
 
 # list of the features that needs to be there in the final encoded dataframe
 ONE_HOT_ENCODED_FEATURES = ['total_leads_droppped', 'referred_lead', 'city_tier_1.0',
@@ -38,7 +38,7 @@ ONE_HOT_ENCODED_FEATURES = ['total_leads_droppped', 'referred_lead', 'city_tier_
 FEATURES_TO_ENCODE = ['city_tier','first_platform_c','first_utm_medium_c','first_utm_source_c']
 
 
-INTERACTION_MAPPING = "/home/assignment/Assignment/01_data_pipeline/scripts/interaction_mapping.csv"
+INTERACTION_MAPPING = "/home/Lead_Scoring_Case_Study/Lead_scoring_data_pipeline/mapping/interaction_mapping.csv"
 INDEX_COLUMNS = ['created_date', 'city_tier', 'first_platform_c',
        'first_utm_medium_c', 'first_utm_source_c', 'total_leads_droppped',
        'referred_lead']

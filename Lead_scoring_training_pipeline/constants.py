@@ -1,4 +1,4 @@
-DB_PATH = "/home/airflow/dags/Lead_scoring_data_pipeline/data/"
+DB_PATH = "/home/Lead_Scoring_Case_Study/Lead_scoring_data_pipeline/"
 DB_FILE_NAME = "lead_scoring_data_cleaning.db"
 
 DB_FILE_MLFLOW = "Lead_scoring_mlflow_production.db"
